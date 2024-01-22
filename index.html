@@ -23,6 +23,7 @@
                     colors: {
                         clifford: '#da373d',
                         'color-primary': '#FF4240',
+                        'second-color': '#131318',
                     }
                 }
             }
@@ -30,7 +31,7 @@
     </script>
     <style>
         ::selection {
-            color: #FF4240;
+            color: #FF4240;    
         }
 
         .color-nav {
@@ -42,15 +43,16 @@
         }
 
         .common-title {
+            font-weight: 800;
             color: #131318;
         }
 
         .common-description {
-            color: rgba(19, 19, 24, 0.6);
+            font-weight: 500;
+            color: rgba(19, 19, 24, 0.6);  
         }
 
         .common-border {
-            border-radius: 16px;
             color: rgba(19, 19, 24, 0.20);
         }
     </style>
@@ -104,43 +106,229 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </button>
-                <button class="btn bg-color-primary text-xl text-white font-semibold px-5">Get Ticket</button>
+                <button class="btn bg-color-primary text-xl text-white hover:text-color-primary font-semibold px-5">Get
+                    Ticket</button>
             </div>
         </div>
 
         <!-- Banner area -->
-        <div class="carousel mt-12">
-            <!-- Banner Slider 1 -->
-            <div id="slide1" class="carousel-item relative w-full h-[550px]">
-                <img src="./Images/1.png" class="w-full redious-4" />
-                <div class="absolute flex gap-3 transform  left-8 bottom-10">
-                    <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
-                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+        <div class="relative">
+            <div class="carousel mt-12 rounded-lg lg:h-[550px]">
+                <!-- Banner Slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full rounded-lg" />
+                    <div class="flex gap-3 absolute left-8 bottom-10">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <!-- Banner Slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/banner2.jpg" class="w-full rounded-lg" />
+                    <div class="flex gap-3 absolute left-8 bottom-10">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
                 </div>
             </div>
-            <!-- Banner Slider 2 -->
-            <div id="slide2" class="carousel-item relative w-full h-[550px]">
-                <img src="./Images/banner2.jpg" class="w-full redious-4" />
-                <div class="absolute flex gap-3 transform  left-8 bottom-10">
-                    <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
-                    <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
-                </div>
+            <div class="w-full lg:w-[502px] p-5 bg-[#131318] rounded-lg lg:absolute right-8 bottom-8 mt-4">
+                <h2 class="text-xl lg:text-2xl text-white font-extrabold mb-3">Meet all the heroes from the field</h2>
+                <p class="text-[#ffffff99] font-[500]">
+                    Discover and connect with the extraordinary individuals making a difference in their respective
+                    fields of expertise.
+                </p>
             </div>
-
         </div>
     </header>
 
     <!-- Main content area starts here with 5 different sections,
-        Hockeys Club, Program Sections, New Products, Question and Get In Touch -->
-    <main class="container w-[82%] max-w-[1180px] mx-auto">
+        Hockeys Club, Program Section, New Products, Question and Get In Touch -->
+    <main class="container w-[82%] max-w-[1180px] mx-auto ">
         <!--  Hockeys Club area starts -->
+        <section class="mt-20">
+            <div class="text-center border-dotted border-y-2 py-8 common-border">
+                <h2 class="common-title text-[22px] lg:text-3xl">Professional Hockeys Club</h2>
+                <p class="common-description lg:w-[600px] mx-auto mt-5">
+                    Join our premier hockey club for a thrilling journey, uniting skilled players and passionate fans
+                    alike.
+                </p>
+            </div>
+            <div class="mt-20 grid grid-row-4 md:grid-cols-2 lg:grid-cols-4 gap-5 items-center justify-center">
+                <!-- Progress bar area-->
+                <div class="text-center space-y-5">
+                    <div class="radial-progress text-color-primary" style="--value:87;" role="progressbar"><span
+                            class="text-second-color text-xl font-extrabold">87%</span></div>
+                    <h3 class="text-second-color text-xl font-semibold">Prayer Facility</h3>
+                    <p class="common-description">
+                        Sacred space for peaceful<br> prayer.
+                    </p>
+                </div>
+                <div class="text-center space-y-5">
+                    <div class="radial-progress text-[#34d399]" style="--value:95;" role="progressbar"><span
+                            class="text-second-color text-xl font-extrabold">95%</span></div>
+                    <h3 class="text-second-color text-xl font-semibold">Experienced Coach</h3>
+                    <p class="common-description">
+                        Seasoned guide fostering<br> personal growth.
+                    </p>
+                </div>
+                <div class="text-center space-y-5">
+                    <div class="radial-progress text-[#facc15]" style="--value:90;" role="progressbar"><span
+                            class="text-second-color text-xl font-extrabold">90%</span></div>
+                    <h3 class="text-second-color text-xl font-semibold">Senior Player</h3>
+                    <p class="common-description">
+                        Experienced leader in<br> the game.
+                    </p>
+                </div>
+                <div class="text-center space-y-5">
+                    <div class="radial-progress text-[#3b82f6]" style="--value:80;" role="progressbar"><span
+                            class="text-second-color text-xl font-extrabold">80%</span></div>
+                    <h3 class="text-second-color text-xl font-semibold">Training Ground</h3>
+                    <p class="common-description">
+                        Elevate skills on<br> training ground.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Section area starts -->
+        <section class="mt-20">
+            <div class="text-center border-dotted border-y-2 py-8 common-border">
+                <h2 class="common-title text-[22px] lg:text-3xl">Program Sections</h2>
+                <p class="common-description lg:w-[600px] mx-auto mt-5">
+                    Explore diverse program sections, each offering unique insights and engaging content for an
+                    enriching learning experience.
+                </p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div class="w-full rounded-xl p-10 bg-cover bg-no-repeat bg-center"
+                    style="background-image: linear-gradient(128deg, #11111170 0%, rgba(19, 19, 24, 0.702) 70%), url('./Images/2.png');">
+                    <h2 class="text-xl font-extrabold text-white lg:mt-24">Junior Program</h2>
+                    <p class="text-base font-[500] text-white mt-3">
+                        Embark on the Junior Program, a transformative journey designed to nurture young minds,
+                        cultivate skills, and inspire a passion for learning in a supportive educational environment.
+                    </p>
+                    <button
+                        class="btn bg-color-primary text-xl text-white font-bold px-5 mt-5 border-0 hover:text-color-primary">Register
+                        Now!</button>
+                </div>
+                <div class="w-full rounded-xl p-10 bg-cover bg-no-repeat bg-center"
+                    style="background-image: linear-gradient(128deg, #11111170 0%, rgba(19, 19, 24, 0.702) 70%), url('./Images/3.png');">
+                    <h2 class="text-xl font-extrabold text-white lg:mt-24">Teenager Program</h2>
+                    <p class="text-base font-[500] text-white mt-3">
+                        Empower and inspire teens with our engaging Teenager Program. Focused on personal growth, skill
+                        development, and meaningful connections, we guide them towards a bright and confident future.
+                    </p>
+                    <button
+                        class="btn bg-color-primary text-xl text-white font-bold px-5 mt-5 border-0 hover:text-color-primary">Register
+                        Now!</button>
+                </div>
+                <div class="w-full lg:col-span-2 rounded-xl p-10 bg-cover bg-no-repeat bg-top "
+                    style="background-image: linear-gradient(128deg, #11111170 0%, rgba(19, 19, 24, 0.702) 70%), url(./Images/4.png);">
+                    <h2 class="text-xl font-extrabold text-white lg:mt-24">Professional Program</h2>
+                    <p class="lg:w-[520px] text-base font-[500] text-white mt-3">
+                        Embark on a transformative journey with our Professional Program. Elevate your skills, gain
+                        industry expertise, and achieve career excellence through specialized training and practical
+                        knowledge.
+                    </p>
+                    <button
+                        class="btn bg-color-primary text-xl text-white font-bold px-5 mt-5 border-0 hover:text-color-primary">Register
+                        Now!</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Products area starts -->
+        <section class="mt-20">
+            <div class="text-center border-dotted border-y-2 py-8 common-border">
+                <h2 class="common-title text-[22px] lg:text-3xl">Our New Products</h2>
+                <p class="common-description lg:w-[600px] mx-auto mt-5">
+                    Discover a world of innovation and style with 'Our New Products.' Elevate your experience with the latest additions, carefully crafted to enhance your lifestyle and meet your needs.
+                </p>
+            </div>
+            <div class="mt-10">
+                <p>This section to be created</p>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Footer area starts -->
-    <footer>
-        <div class="container mx-auto w-[82%] max-w-[1180px]">
-
+    <!-- Footer area starts  -->
+    <footer class=" bg-second-color pt-20 text-base text-[#ffffff99] font-[500]">
+        <div class="container mx-auto w-[82%] max-w-[1180px] flex flex-col lg:flex-row justify-around gap-10">
+            <div class="w-full lg:w-[400px] px-10 space-y-2 text-center lg:text-left">
+                <h3 class="text-3xl font-extrabold text-white">Get In Touch</h3>
+                <p>Connect with us easily! Feel free to reach out, ask questions, or share your thoughts anytime.</p>
+                <p class="text-[#ffffffcc]"><i class="text-color-primary mr-5 text-xl fa-regular fa-envelope"></i> slapshot@support.com</p>
+                <p class="text-[#ffffffcc]"><i class="text-color-primary mr-5 text-xl fa-solid fa-phone"></i> 0303-3021-547</p>
+            </div>
+            <div class="w-full grid grid-cols-2 lg:grid-cols-3 gap-5 justify-center mt-5 lg:mt-0">
+                <!-- item one -->
+                <div class="w-full text-center lg:text-left">
+                    <h3 class="text-lg font-extrabold text-white mb-3">Company</h3>
+                    <ul class="">
+                        <li>About us</li>
+                        <li>Leadership</li>
+                        <li>Careers</li>
+                        <li>News & Article</li>
+                        <li>Legal Notice</li>
+                    </ul>
+                </div>
+                <!-- Item two -->
+                <div class="w-full text-center lg:text-left">
+                    <h3 class="text-lg font-extrabold text-white mb-3">Support</h3>
+                    <ul class="">
+                        <li>Help Center</li>
+                        <li>FAQ</li>
+                        <li>Ticket Support</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <!-- Item three -->
+                <div class="w-full col-span-2 lg:col-auto text-center lg:text-left">
+                    <h3 class="text-lg font-extrabold text-white mb-3">Services</h3>
+                    <ul class="">
+                        <li>Academy</li>
+                        <li>Group Lesson</li>
+                        <li>Private Lesson</li>
+                        <li>Hockeys for kids</li>
+                        <li>Hockeys for Adult</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="w-full grid grid-cols-2 lg:grid-cols-3 gap-5 justify-center align-top mt-5">
+                item one 
+                <div class="w-full">
+                    <h3 class="text-lg font-extrabold text-white mb-3">Company</h3>
+                    <ul class="space-y-2">
+                        <li>About us</li>
+                        <li>Leadership</li>
+                        <li>Careers</li>
+                        <li>News & Article</li>
+                        <li>Legal Notice</li>
+                    </ul>
+                </div>
+                Item two 
+                <div class="w-full">
+                    <h3 class="text-lg font-extrabold text-white mb-3">Support</h3>
+                    <ul class="space-y-2">
+                        <li>Help Center</li>
+                        <li>FAQ</li>
+                        <li>Ticket Support</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                 Item three 
+                <div class="w-full col-span-2 lg:col-auto">
+                    <h3 class="text-lg font-extrabold text-white mb-3">Services</h3>
+                    <ul class="space-y-2">
+                        <li>Academy</li>
+                        <li>Group Lesson</li>
+                        <li>Private Lesson</li>
+                        <li>Hockeys for kids</li>
+                        <li>Hockeys for Adult</li>
+                    </ul>
+                </div>
+            </div> -->
         </div>
     </footer>
 </body>
